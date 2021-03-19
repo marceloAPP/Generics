@@ -2,12 +2,12 @@
 
 namespace generics1
 {
-    class PrintService
+    class PrintService<T>
     {
-        private int[] _values = new int[10];
+        private T[] _values = new T[10];
         private int _count = 0;
 
-        public void AddValues(int values)
+        public void AddValues(T values)
         {
             if (_count == 10)
             {
@@ -17,7 +17,7 @@ namespace generics1
             _count++;
         }
 
-        public int Fisrt()
+        public T Fisrt()
         {
             if (_count == 0)
             {
